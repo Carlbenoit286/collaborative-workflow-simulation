@@ -14,4 +14,4 @@ This commit will return 0 if y_true is an empty list
 
 ## 3. On a real team, a teammate would review this pull request before it's merged. Name one thing in your code you'd want a reviewer to check.
 
-Please check the function calculate_f1 returns 0 if when 1 of the functon is equal to 0.
+Please check the function calculate_f1 returns 0 when both of the functon is equal to 0.
