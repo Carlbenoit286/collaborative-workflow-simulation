@@ -28,4 +28,16 @@ def calculate_recall(y_true, y_pred):
     return true_positives / actual_positives
 
 
-# TODO: Replace this comment with your calculate_f1 function.
+# TODO
+
+def calculate_f1(y_true, y_pred):
+    """Added F1 score calculation to evaluation module"""
+    precision = calculate_precision(y_true, y_pred)
+    recall = calculate_recall(y_true, y_pred)
+
+    if precision == 0 and recall == 0:
+        return 0
+    else:
+        F1 = 2 * (precision * recall) / (precision + recall)
+        return F1
+
